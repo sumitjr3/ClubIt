@@ -4,5 +4,6 @@
     <color name="pure_white">#FFFFFFFF</color>
     <color name="orange">#D54D0F</color>
     <color name="white_shade">#F3F3F3</color>
+    <color name="black_shade">#151515</color>
 
 </resources>
