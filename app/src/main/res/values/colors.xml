@@ -2,6 +2,7 @@
 <resources>
     <color name="pure_black">#FF000000</color>
     <color name="pure_white">#FFFFFFFF</color>
-    <color name="orange">#f65151</color>
+    <color name="orange">#D54D0F</color>
+    <color name="white_shade">#F3F3F3</color>
 
 </resources>
