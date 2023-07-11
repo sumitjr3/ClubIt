@@ -1,0 +1,7 @@
+<resources>
+    <item name="home" type="id" />
+    <item name="club" type="id" />
+    <item name="create" type="id" />
+    <item name="leaderBoard" type="id" />
+    <item name="profile" type="id" />
+</resources>
