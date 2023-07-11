@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style for the BottomNavigationView -->
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <!-- Background color for the BottomNavigationView -->
+        <item name="android:background">@color/green</item>
+        <!-- Text color for the selected item's title -->
+        <item name="android:textColor">@color/orange</item>
+        <!-- Tint color for the selected item's icon -->
+        <item name="itemIconTint">@color/orange</item>
+    </style>
+
+    <!-- Style for the selected item in the BottomNavigationView -->
+    <style name="BottomNavigationSelectedItemStyle" parent="BottomNavigationStyle">
+        <!-- Text color for the selected item's title -->
+        <item name="android:textColor">@color/orange</item>
+        <!-- Tint color for the selected item's icon -->
+        <item name="itemIconTint">@color/orange</item>
+    </style>
+
+</resources>
