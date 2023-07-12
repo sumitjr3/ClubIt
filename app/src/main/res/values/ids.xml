@@ -1,0 +1,7 @@
+<resources>
+    <item name="btm_home" type="id" />
+    <item name="btm_club" type="id" />
+    <item name="btm_create" type="id" />
+    <item name="btm_leaderBoard" type="id" />
+    <item name="btm_profile" type="id" />
+</resources>
