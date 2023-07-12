@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateFragment">
+    tools:context=".CreateFragment"
+    android:background="@color/pure_black">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Create" />
+   <Spinner
+       android:id="@+id/dropdown_menu"
+       android:layout_width="330dp"
+       android:layout_height="80dp"
+       android:layout_marginTop="50dp"
+       android:background="@drawable/shape"
+       android:gravity="center"
+       app:layout_constraintEnd_toEndOf="parent"
 
-</FrameLayout>
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <EditText
+       android:id="@+id/topicEditText"
+       android:layout_width="330dp"
+       android:layout_height="80dp"
+       android:layout_marginTop="50dp"
+       android:background="@drawable/shape"
+       android:ems="10"
+       android:gravity="center_vertical"
+       android:hint=" Topic"
+       android:inputType="text"
+       android:textColor="@color/white_shade"
+       android:textColorHint="@color/white_shade"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.495"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/dropdown_menu" />
+
+   <EditText
+       android:id="@+id/contentEditText"
+       android:layout_width="330dp"
+       android:layout_height="300dp"
+       android:layout_marginTop="50dp"
+       android:background="@drawable/shape"
+       android:ems="10"
+       android:gravity="clip_vertical"
+       android:hint=" Content"
+       android:inputType="text"
+       android:textColor="@color/white_shade"
+       android:textColorHint="@color/white_shade"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/topicEditText" />
+
+   <Button
+       android:id="@+id/button"
+       android:layout_width="170dp"
+       android:layout_height="60dp"
+       android:layout_marginTop="35dp"
+       android:layout_marginBottom="26dp"
+       android:background="@drawable/shape_diff"
+       android:text="post"
+       android:backgroundTint="@color/green"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.497"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/contentEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
