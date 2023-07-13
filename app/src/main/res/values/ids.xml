@@ -4,4 +4,5 @@
     <item name="btm_create" type="id" />
     <item name="btm_leaderBoard" type="id" />
     <item name="btm_profile" type="id" />
+    <item name="dropDownMenu" type="id" />
 </resources>
