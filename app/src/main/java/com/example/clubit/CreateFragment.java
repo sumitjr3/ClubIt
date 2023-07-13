@@ -17,7 +17,7 @@ public class CreateFragment extends android.app.Fragment {
 
     private Spinner spinner;
     private EditText topic,content;
-    Button postButton;
+    Button button;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -58,15 +58,15 @@ public class CreateFragment extends android.app.Fragment {
         spinner = view.findViewById(R.id.dropdown_menu);
         topic = view.findViewById(R.id.topicEditText);
         content = view.findViewById(R.id.contentEditText);
-        postButton = view.findViewById(R.id.button);
+       button = view.findViewById(R.id.button);
 
         String[] items = {"Select your domain","WebDev", "AppDev", "AI/ML", "BlockChain", "DevOps", "DataScience", "Data", "Cloud", "CyberSecurity", "Designing", "Iot"};
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_dropdown_item_1line, items);
         spinner.setAdapter(adapter);
 
-        postButton.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String domain = spinner.getSelectedItem().toString();
