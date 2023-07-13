@@ -7,5 +7,8 @@
     <color name="black_shade">#151515</color>
     <color name="green">#04CA96</color>
     <color name="red">#F65151</color>
+    <color name="light_black">#2b2b2b</color>
+    <color name="orange_transparent">#281b14</color>
+    <color name="green_transparent">#282c1b</color>
 
 </resources>
