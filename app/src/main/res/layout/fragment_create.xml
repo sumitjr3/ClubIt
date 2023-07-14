@@ -1,14 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateFragment">
+    tools:context=".CreateFragment"
+    android:background="@color/black_shade">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Create" />
+   <Spinner
+       android:id="@+id/dropdown_menu"
+       android:layout_width="330dp"
+       android:layout_height="80dp"
+       android:layout_marginStart="25dp"
+       android:layout_marginTop="40dp"
+       android:layout_marginEnd="56dp"
+       android:background="@drawable/shape"
+       android:gravity="center"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-</FrameLayout>
+   <EditText
+       android:id="@+id/topicEditText"
+       android:layout_width="330dp"
+       android:layout_height="80dp"
+       android:layout_marginStart="25dp"
+       android:layout_marginTop="30dp"
+       android:layout_marginEnd="56dp"
+       android:background="@drawable/shape"
+       android:ems="10"
+       android:gravity="center_vertical"
+       android:hint=" Topic"
+       android:inputType="text"
+       android:padding="5dp"
+       android:textColor="@color/white_shade"
+       android:textColorHint="@color/white_shade"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/dropdown_menu" />
+
+   <EditText
+       android:id="@+id/contentEditText"
+       android:layout_width="330dp"
+       android:layout_height="300dp"
+       android:layout_marginStart="25dp"
+       android:layout_marginTop="30dp"
+       android:layout_marginEnd="56dp"
+       android:background="@drawable/shape"
+       android:ems="10"
+       android:gravity="clip_vertical"
+       android:hint=" Content"
+       android:inputType="text"
+       android:padding="5dp"
+       android:textColor="@color/white_shade"
+       android:textColorHint="@color/white_shade"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/topicEditText" />
+
+   <ImageButton
+       android:id="@+id/imageButton"
+       android:layout_width="35dp"
+       android:layout_height="35dp"
+       android:layout_marginStart="15dp"
+       android:layout_marginTop="20dp"
+       android:background="@color/black_shade"
+       android:src="@drawable/back2"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="15dp"
+       android:layout_marginTop="21dp"
+       android:layout_marginEnd="271dp"
+       android:text="Create"
+       android:textColor="@color/white_shade"
+       android:textSize="25dp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/imageButton"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <Button
+       android:id="@+id/button"
+       android:layout_width="99dp"
+       android:layout_height="44dp"
+       android:layout_marginStart="287dp"
+       android:layout_marginEnd="25dp"
+       android:layout_marginBottom="25dp"
+       android:background="@drawable/shape_diff"
+       android:text="post"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
